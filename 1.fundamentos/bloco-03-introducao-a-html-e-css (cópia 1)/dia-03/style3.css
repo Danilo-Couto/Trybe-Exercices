@@ -14,4 +14,6 @@ li:active {
     list-style: none;
 }
 
-ul li 
+ul, ol {
+    list-style-type: none;
+}
