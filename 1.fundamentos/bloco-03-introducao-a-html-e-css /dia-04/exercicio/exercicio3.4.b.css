@@ -1,0 +1,20 @@
+body {
+font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li{
+    display:inline;
+}
+
+h3 h2 ul{
+margin-top: -300px;
+}
+
+img:nth-of-type(2) {
+    margin-top: -500px;
+}
+
+
+p {
+    margin-left: 350px;
+}
