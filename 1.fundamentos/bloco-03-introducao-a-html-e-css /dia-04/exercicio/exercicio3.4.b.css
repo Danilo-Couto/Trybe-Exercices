@@ -10,11 +10,27 @@ h3 h2 ul{
 margin-top: -300px;
 }
 
-img:nth-of-type(2) {
-    margin-top: -500px;
+li > p {
+    background-color: aqua;
 }
 
-
-p {
-    margin-left: 350px;
+table {
+    border: 1px dashed black;
 }
+caption {
+    border: 1px dashed black;
+}
+td {
+    border: 1px dashed black;
+}
+
+img {
+    background-position: 20px top;
+    max-width: 100%;
+    width:300px;
+ }
+
+ #imagemsoco {
+    display: block;
+    box-shadow: 5px 10px 20px #012542e1; 
+    }
