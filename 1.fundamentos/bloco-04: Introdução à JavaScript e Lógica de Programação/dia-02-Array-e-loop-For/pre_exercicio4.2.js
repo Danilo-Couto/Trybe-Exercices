@@ -40,4 +40,3 @@ points.sort(function(a, b){return a-b});
 console.log (points[0]); */
 
 /* console.log (numbers.sort(function (a,b){return a-b})); */
-
