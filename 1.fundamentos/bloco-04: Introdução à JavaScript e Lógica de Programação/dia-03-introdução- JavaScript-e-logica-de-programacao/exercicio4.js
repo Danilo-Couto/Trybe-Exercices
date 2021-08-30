@@ -6,7 +6,6 @@
 
 */
 
-
 let n = 5;
 let base = n;
 let meio = (n+1)/2;
