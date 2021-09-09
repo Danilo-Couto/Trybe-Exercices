@@ -68,7 +68,32 @@ feriadoButton.addEventListener('click', changeCollor);
         } 
     } 
     
+    function putfridayButton (str) {
+        let fridayButton = document.createElement('button');
+        fridayButton.id = 'btn-friday';
+        fridayButton.innerText =str;
+        buttonsContainer.appendChild(fridayButton);    
+    }
+    putfridayButton('Sexta-feira')
+//---
+    let fridays = document.getElementsByClassName('friday');
+    let botaoSexta = document.getElementById('btn-friday');
+    let arrayFriday = [4, 11, 18, 25];
+
+    function sextou (){
+        for (let index in fridays){
+            if (fridays[index].innerHTML!='é sextaaaa pohhaaa!!!') {
+                fridays[index].innerHTML='é sextaaaa pohhaaa!!!'
+            } else {
+                fridays[index].innerHTML= arrayFriday[index];
+            }
+        }
+    }
+
+botaoSexta.addEventListener('click', sextou);
+
+//--------
+
 /* 
-
-
+ 
  */
