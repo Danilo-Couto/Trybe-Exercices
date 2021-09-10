@@ -109,26 +109,36 @@ function zoom () {
 }
 
 let TasksContainer = document.querySelector('.my-tasks')
+let newTask = document.createElement('span');
 
-function addTask (str) {
+function addTask (tarefa) {
     let newTask = document.createElement('span');
-    //newTask.className = 'my-tasks';
-    newTask.innerHTML = str;
+    newTask.className = 'my-tasks';
+    newTask.innerText = tarefa;
     TasksContainer.appendChild(newTask);
 }
 
-addTask ('cozinhar'); 
+addTask ('entregar projeto Trybe'); 
 //------
-function legends (color) {
-    let taskLegend = document.createElement('div');
-    //taskLegend.className = 'task';
-    taskLegend.style.backgroundColor = color;
-    TasksContainer.appendChild(taskLegend);
-}
-legends ('red');
 
-/* 
-Implemente uma função que adiciona uma legenda com cor para a tarefa criada no exercício anterior. Esta função deverá receber como parâmetro uma string ("cor") e criar dinamicamente um elemento de tag <div> com a classe task .
-O parâmetro cor deverá ser utilizado como cor de fundo da <div> criada.
-O elemento criado deverá ser adicionado como filho/filha da tag <div> que possui a classe "my-tasks" .
- */
+function bullet (color) {
+    let taskBullet = document.createElement('div');
+    taskBullet.className = 'task';
+    taskBullet.style.backgroundColor = color;
+    TasksContainer.appendChild(taskBullet);   
+
+}
+bullet ('green');
+
+let taskBullet = document.querySelector('.task');
+taskBullet.addEventListener('click', taskSelection)
+function taskSelection () {
+    if (taskBullet.className === 'task'){
+        let taskSelected = document.createElement('class');
+        taskBullet.className = 'task selected';
+        taskBullet.style.backgroundColor = 'red';
+    } else {
+        taskBullet.className = 'task';
+        taskBullet.style.backgroundColor = 'green';
+    }
+}
