@@ -37,7 +37,6 @@ function createDaysOfTheMonth () {
     createDaysOfTheMonth ()
 
 function holidayButton (str) {
-    //str = 'Feriados';
     let holidayButton = document.createElement('button');
     holidayButton.id='btn-holiday';
     holidayButton.innerText = str;
@@ -75,38 +74,46 @@ let fridays = document.getElementsByClassName('friday');
 let botaoSexta = document.getElementById('btn-friday');
 let arrayFriday = [4, 11, 18, 25];
 
+botaoSexta.addEventListener('click', sextou);
+
 function sextou (){
     for (let index in fridays){
-        if (fridays[index].innerHTML!='é sextaaaa pohhaaa!!!') {
-        fridays[index].innerHTML='é sextaaaa pohhaaa!!!'
+        if (fridays[index].innerHTML!='é sexta poha!!!') {
+        fridays[index].innerHTML='é sexta poha!!!'
         } else {
         fridays[index].innerHTML= arrayFriday[index];
         }
     }
 }
-botaoSexta.addEventListener('click', sextou);
 
-//--------
-let diaDoMes = document.querySelectorAll('.day');
 
-for (let index in diaDoMes) {
-diaDoMes[index].addEventListener('mouseover', zoomIn)
-diaDoMes[index].addEventListener('mouseleave', zoomOut)
+let callendary = document.getElementById('days');
+callendary.addEventListener('mouseover', zoom);
+
+function zoom () {
+    let diaDoMes = document.querySelectorAll('.day');
+    for (let index in diaDoMes) {
+
+    diaDoMes[index].addEventListener('mouseover', zoomIn);
+    diaDoMes[index].addEventListener('mouseleave', zoomOut);
 
     function zoomIn (event) {
         event.target.style.color = 'green';
         event.target.style.fontSize = '40px';
     }
-
     function zoomOut (event) {
         event.target.style.color = '#777';
         event.target.style.fontSize = '20px';
     }
 }
+}
 
-//----
+function addTask (str) {
+    let myTasksContainer = document.querySelector('.my-tasks')
+    let newTask = document.createElement('span');
+    //newTask.className = 'my-tasks';
+    newTask.innerHTML = str;
+    myTasksContainer.appendChild(newTask);
+}
 
-/* 
- Implemente duas funções que criem um efeito de "zoom". Ao passar o ponteiro do mouse em um dia do mês no calendário, o texto desse dia deve aumentar e, quando o ponteiro do mouse sair do dia, o texto deve retornar ao tamanho original.
-Dica - Propriedade: event.target .
- */
+addTask ('cozinhar'); 
