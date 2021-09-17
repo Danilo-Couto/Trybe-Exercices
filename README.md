@@ -1,1 +1,1 @@
-# exercicios
+Exercicios propostos no Course
