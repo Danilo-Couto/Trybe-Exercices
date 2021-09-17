@@ -1,0 +1,20 @@
+body {
+    width: 100%;
+    max-width:80%;
+    margin: 40px auto;
+    background-color: #6695a7;
+    color: white;
+}
+
+h1 {
+    font-weight: bold;
+    color: #F7C59F;
+}
+
+p {
+    font-style: italic;
+}
+
+input, textarea, select, button {
+    box-shadow: 5px 5px 5px black;
+}
