@@ -19,13 +19,13 @@
     <h1 class='container'>Cadastre seu Currículo</h1>
     <p class='container'> Preencha os campos abaixo</p>
     <main>
-        <form action="#" id="myform" class='js-form-1'> 
+        <form action="#" method="GET" id="myform" class='js-form-1'> 
             <fieldset class='container'>
                 <div class="form-group col-md-6" >
                     <label for="nome"></label>
                     Nome Completo: <input type="text" name="nome" id="nome" placeholder="Nome" maxlength="40" class="form-control form__input" data-validate-field='name' >
                </div> 
-                <div>
+               <div>
                     <label for="email"></label>
                     E_mail:<input type="text" name='email' id='email' placeholder="E-Mail" maxlength="50" class="form-control" data-validate-field='email'>
                </div> 
@@ -63,7 +63,7 @@
                     </label>
                 </div>  
             </fieldset>
-            <br>
+            <br> -->
 
             <fieldset class='container'>
                 <div class="line-content">
@@ -81,16 +81,17 @@
                     Descrição do cargo: <textarea type="textarea" maxlength="500" cols="5" rows="5"id="descricaoCargo" name="descricaoCargo" required class="form-control" data-validate-field='descricaoCargo'>
                     </textarea>
                     <br>
-                   <div class="line-content">  
+                    <div class="line-content">  
 
                    Data de Início: <input type="text" id="datepicker" data-validate-field='dateStart'>
 
                    Data de Término: <input type="text" id="datepicker2"  data-validate-field='dateEnd'>
                   
-                </div>   
+                </div>    
                   <br>
-            </fieldset> 
-            <button type="submit" id="submit" class="form-control btn-success"> Enviar </button>
+            </fieldset>
+            
+            <button id="botaoSubmit" class="form-control btn-success" > Enviar </button>
 
         </form>
         <br>
@@ -99,10 +100,10 @@
         <button id='clearForm' class="btn-warning"> Limpar dados </button>    
         </div>
     </main>  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
-                
     <script src="../node_modules/just-validate/dist/js/just-validate.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+                
     <script src="script.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>

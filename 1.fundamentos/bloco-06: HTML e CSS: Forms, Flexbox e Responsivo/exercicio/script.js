@@ -32,9 +32,8 @@ function cleanForm() {
 
 let clearButton = document.getElementById('clearForm');
 clearButton.addEventListener ('click', cleanForm);
-
-
-new JustValidate('.js-form-1',/* {
+ 
+new window.JustValidate('.js-form-1'/*, {
   rules: {
       nome: {
         required: true,
