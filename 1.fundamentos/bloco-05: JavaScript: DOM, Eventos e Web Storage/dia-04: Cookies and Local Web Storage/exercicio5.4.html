@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Exercicio 5.4</title>
+      <style>
+      body {
+          margin: 10px;
+      }
+      .preferences {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          flex-wrap: wrap;
+          border: 1px solid green;
+      }
+      .options {
+          display: flex;
+          flex-direction: column;
+      }
+      .title {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .description {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-style: italic;
+      }
+      .content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 15px;
+      }
+      .paragraph {
+          display: flex;
+        }
+    
+    </style>
+</head>
+<body>
+    <select name="" id="cores">
+        <option value="blue">Azul</option>
+        <option value="yellow">Amarelo</option>
+        <option value="red">Vermelho</option>
+        <option value="gray">Cinza</option>
+        <option value="green">verde</option>
+    </select>
+
+    <select name="" id="corDaFonte" >
+        <option value="white">Branco</option>
+        <option value="black">Preto</option>
+    </select> 
+    <input type="number" name='fontSize' placeholder="selecione cor da fonte" min="1">
+    <input type="number" name='textSpace' placeholder="selecione espaçamento do texto" min="1">
+    
+    <select name="" id="font-family">
+        <option value= "Impact,Charcoal,sans-serif" > Impact</option>
+        <option value= "Segoe UI,Tahoma,sans-serif">Segoe UI</option>
+        <option value= "Times New Roman,Times,sans-serif" >Times New Roman</option>
+    </select>
+
+    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mattis ultrices mollis. Morbi eu turpis sed tortor vehicula malesuada. Nullam a mauris erat. Nulla pellentesque dapibus erat, vitae dictum quam dapibus non. Mauris enim elit, dignissim in ipsum nec, elementum commodo metus. Aenean fermentum erat ac dui euismod pellentesque. Nulla ac dui pharetra, tempus dolor ac, dictum urna. Suspendisse luctus malesuada fringilla. Donec varius semper est, eu auctor lacus. Proin tincidunt elit justo, tempus finibus enim convallis eu.
+    </p>
+    <script src = "exercicio5.4.js"> </script>
+</body>
+</html>

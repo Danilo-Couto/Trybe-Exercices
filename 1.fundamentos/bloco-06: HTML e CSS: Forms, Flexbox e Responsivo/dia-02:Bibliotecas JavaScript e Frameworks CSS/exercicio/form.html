@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+    <link rel='stylesheet' href='style.css' 
+    ></link>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+
+
+    <title>Formularios</title>
+</head>
+<body class='container'>
+    <h1 class='container'>Cadastre seu Currículo</h1>
+    <p class='container'> Preencha os campos abaixo</p>
+    <main>
+        <form action="#" method="GET" id="myform" class='js-form-1'> 
+            <fieldset class='container'>
+                <div class="form-group col-md-6" >
+                    <label for="nome"></label>
+                    Nome Completo: <input type="text" name="nome" id="nome" placeholder="Nome" maxlength="40" class="form-control form__input" data-validate-field='name' >
+               </div> 
+               <div>
+                    <label for="email"></label>
+                    E_mail:<input type="text" name='email' id='email' placeholder="E-Mail" maxlength="50" class="form-control" data-validate-field='email'>
+               </div> 
+                <div>   
+                    <label for="cpf"></label>
+                    CPF: <input type="text" name='cpf' placeholder="CPF" maxlength="11" id='cpf' class="form-control"  data-validate-field='cpf'>
+                </div> 
+                <div>
+                    <label for="endereco"></label>
+                    Endereço: <input type="text" name='endereco' id='endereco' placeholder="Endereço" maxlength="200" class="form-control" data-validate-field='text'>
+                </div> 
+                <div>    
+                    Estado: <select name="uf" id="uf" class="form-control" data-validate-field='uf' ></select>
+                 </div> 
+
+                <div>
+                    <label for="cidade"></label>
+                    Cidade <input type="text" name='cidade' placeholder="Cidade" maxlength="28" id="cidade" class="form-control" data-validate-field='cidade'>
+                </div>
+                <br>
+                <div>     
+                    Tipo de morada
+                    <label for="casa">
+                        <input type="radio" value="casa" id='casa' name=morada  data-validate-field='morada'>
+                        <span>Casa</span>
+                    </label>
+
+                    <label for="apto">
+                        <input type="radio" value="apto" name=morada id='apto' data-validate-field='apto'>
+                        <span>Apto</span>
+                    </label>
+                        <label for="outraMorada">
+                        <input type="radio" value="outro" name=morada id='outraMorada' data-validate-field='outro'>
+                        <span>Outro</span>
+                    </label>
+                </div>  
+            </fieldset>
+            <br> -->
+
+            <fieldset class='container'>
+                <div class="line-content">
+                  <label for="currículo"></label>
+                  Resumo do currículo:
+                   <textarea id="currículo" name="currículo" maxlength="1000" cols="10" rows="10" required class="form-control"  data-validate-field='curriculo'></textarea>
+                </div>
+                <div class="line-content">
+                    <label for="cargo">Cargo: </label>
+                    <input type="text" name="cargo" id="cargo" maxlength="40" required class="form-control" data-validate-field='cargo'>
+                  </div>
+                  <div class="line-content">
+                    <label for="descricaoCargo">
+                    </label>
+                    Descrição do cargo: <textarea type="textarea" maxlength="500" cols="5" rows="5"id="descricaoCargo" name="descricaoCargo" required class="form-control" data-validate-field='descricaoCargo'>
+                    </textarea>
+                    <br>
+                    <div class="line-content">  
+
+                   Data de Início: <input type="text" id="datepicker" data-validate-field='dateStart'>
+
+                   Data de Término: <input type="text" id="datepicker2"  data-validate-field='dateEnd'>
+                  
+                </div>    
+                  <br>
+            </fieldset>
+            
+            <button id="botaoSubmit" class="form-control btn-success" > Enviar </button>
+
+        </form>
+        <br>
+        
+        <div class='container'>
+        <button id='clearForm' class="btn-warning"> Limpar dados </button>    
+        </div>
+    </main>  
+    <script src="../node_modules/just-validate/dist/js/just-validate.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+                
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
+    
+    <script src="pikaday.js"></script>
+
+</script>
+    
+
+</body>
