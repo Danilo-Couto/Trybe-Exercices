@@ -1,0 +1,100 @@
+body {
+
+}
+h1 {
+
+}
+h2 {
+
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 0;
+}
+
+/* MOBILE */
+
+@media screen {
+    body {
+        font-size: smaller;
+        margin: 25px 6%
+        }
+    h1 {
+        font-size: smaller;
+    }
+    img {
+        margin-top: 50px;
+    }
+} 
+
+/* ---- SEGUNDO GABARITO ----
+@media screen and (min-width: 475px) {
+  body {
+    background: rgba(0,0,255,.2);
+    margin: 25px 6%;
+  }
+
+  figure {
+    float: left;
+    width: 45%;
+    margin-right: 4.5%;
+  }
+} */
+
+@media (min-width: 475px) {
+    body {
+        background-color: burlywood;
+        font-size: 18px;
+        margin: 25px;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    h2 {
+        display: flex;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 45%;
+    } 
+}
+@media (min-width:900px) {
+    body {
+        background-color: cadetblue;
+        font-size: larger;
+        margin: 10px;
+        max-width: 1000px;
+    }
+}
+
+/* 
+Realize as seguintes tarefas:
+1 - Faça o tamanho da fonte ser maior;
+2 - Faça o tamanho da fonte dos elementos h1 ser menor;
+3 - Aumente o espaçamento entre as figuras;
+4 - Adicione um pouco de margin na página.
+5 - Guarde a largura da tela no ponto que você identificou que o layout atual não funcionou bem (por exemplo 800px) . Esse será o primeiro breakpoint do layout . Um breakpoint é apenas um ponto onde estamos definindo que o design atual deve mudar;
+6 - Crie uma media query no seu arquivo CSS , usando a dimensão em pixels que você guardou como o min-width do teste da media query . Dentro desse breakpoint , adicione os seguintes ajustes:
+    Altere a cor de fundo (isso vai te ajudar a perceber quando a media query teve efeito) ;
+    Ajuste o tamanho da fonte;
+    Ajuste as margens da página;
+    Faça as imagens serem mostradas em duas colunas.
+*/
+/* 
+7 - Agora, você vai criar outro breakpoint para telas grandes. Redimensione sua tela de novo para encontrar um novo breakpoint .
+8 - Crie uma nova media query no seu arquivo CSS usando a dimensão que você encontrou para telas grandes (por exemplo 1300px) , e realize os seguintes ajustes dentro do breakpoint :
+    Altere a cor de fundo;
+    Ajuste o tamanho da fonte;
+    Ajuste as margens da página;
+    Adicione a propriedade max-width à página, para garantir que a largura das linhas não fique muito grande.
+ */
+ 
