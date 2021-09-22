@@ -1,11 +1,10 @@
 html {
     box-sizing: border-box;
     margin: 5px;
-    border: 1px solid black;
   }
-/*   *, *:before, *:after {
+*, *:before, *:after {
     box-sizing: inherit;
-  } */
+  }
 
   @media screen and (max-width: 600px) {
   body {
@@ -23,43 +22,42 @@ html {
   nav ul {
     display: flex;
     justify-content: space-between;
-    list-style: none;
+  }
+  ul {
+      list-style: none;
   }
 }
 
-/* 
-@media (min-width: 780px) {    
-    body {
-        font-size: smaller;
-        text-align: center;
-    }
-    header {
-        border: 1px solid black;
-        text-align: center;
-        justify-content: center;
-    }
-    nav ul {
-        border: 1px solid rgb(175, 27, 27);
-        display: flex;
-        justify-content: space-between;
-    }
-    li {
-        list-style: none;
-    }
-    aside {
-        border: 1px solid green;
-    }
-    aside ul {
-        border: 1px solid blue;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+ @media (min-width: 600px) {    
+  body {
+    background-color: rgb(189, 238, 238);
+    font-family: sans-serif;
+  }
+  .container {
+    flex-direction: column;
+  }
+  p {
+    padding: 0 5px;
+    line-height: 1.5em;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  }
+  ul {
+    list-style: none;
+  }
+  h2 {
+      text-align: center;
+  }
 }
-
 @media (min-width: 980px) {    
-
-} */
+    body {
+        background-color: rgb(199, 238, 189);
+        font-family: sans-serif;
+      }
+} 
 
 /* 
 1 - Utilizando a abordagem mobile first e media queries , crie três versões de layout diferentes para essa página . Cada layout deve corresponder a um tamanho diferente de página (pequeno, médio e grande) . Faça pelo menos um commit para cada layout ;
