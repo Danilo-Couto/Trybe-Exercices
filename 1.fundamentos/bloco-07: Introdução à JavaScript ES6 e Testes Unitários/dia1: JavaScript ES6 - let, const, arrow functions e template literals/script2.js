@@ -16,7 +16,9 @@ crescentOrder (oddsAndEvens);
 
   // FUNCAO OTIMIZADA
 crescentOrder = oddsAndEvens => {
-  let lowestToHighest = oddsAndEvens.sort((a, b) => a - b);
-  console.log(lowestToHighest)
+  oddsAndEvens.sort((a, b) => a - b);
+  console.log(oddsAndEvens)
 }
 crescentOrder ([13, 3, 4, 10, 7, 2]);
+
+//sort subscreve array original
