@@ -23,7 +23,7 @@
 allGreaterThan(18, [20, 30, 19, 21]);
  */
 
-function allGreaterThan (number, array)  {
+allGreaterThan = (number, array) => {
   let result = true;
   for (let i = 0; i < array.length ; i+=1){
       if (array[i]<number) {
@@ -32,5 +32,4 @@ function allGreaterThan (number, array)  {
   }
   console.log (result);
 }
-
-allGreaterThan(28, [20, 30, 19, 21]);
+allGreaterThan(18, [20, 30, 19, 21]);

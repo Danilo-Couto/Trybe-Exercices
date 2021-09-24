@@ -18,6 +18,9 @@ customer2['lastName'] = 'Silva';
 console.log(customer2) */;
 
 const customer = {
+  firstName: 'Roberto',
+  age: 22,
+  job: 'Teacher',
 };
  
 //eu que fiz

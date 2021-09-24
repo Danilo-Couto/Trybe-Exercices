@@ -45,8 +45,9 @@ const citiesAndStates = [
 buildCitiesArray();
  */
 
-const buildCitiesArray = () => {
+buildCitiesArray = () => {
     for (let i = 0; i < citiesAndStates.length ; i+=1){
         console.log (`${citiesAndStates[i].city}: ${citiesAndStates[i].state}`)
     } 
 }
+buildCitiesArray (citiesAndStates)
