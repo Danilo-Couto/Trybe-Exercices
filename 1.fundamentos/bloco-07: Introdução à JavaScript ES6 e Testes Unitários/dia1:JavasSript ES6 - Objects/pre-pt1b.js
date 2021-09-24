@@ -11,8 +11,7 @@ function objectCreator (a, b, c ) {
   const model = c;
   a[newKey2] = model;
 
-  return Object
- 
+  console.log(a); 
  }
 
 objectCreator ('motorcycle','Yamaha', 'Tenere 250');
