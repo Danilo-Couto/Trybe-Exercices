@@ -1,0 +1,32 @@
+<!-- /* Crie uma página que contenha:
+Um botão ao qual será associado um event listener ;
+Uma variável clickCount no arquivo JavaScript que acumule o número de clicks no botão;
+Um campo no HTML que vá atualizando a quantidade de clicks no botão conforme a variável clickCount é atualizada. */ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id ='botao'>CLIQUE PARA CONTAR </button>
+    <h3 id ='contador'>Contador de Cliques:</h3>
+    <script>
+    
+/*     let num = 0;
+    let counter = document.getElementById('contador');
+    const buttonClick = document.getElementById('botao');
+    buttonClick.addEventListener ('click', () => counter.innerText= `Contador de Cliques: ${num +=1}`
+); */
+
+    let num = 0;
+    let counter = document.getElementById('contador');
+    const buttonClick = document.getElementById('botao');
+    buttonClick.onclick = () => counter.innerText= `Contador de Cliques: ${num +=1}`
+;
+    </script>
+</body>
+</html> 
