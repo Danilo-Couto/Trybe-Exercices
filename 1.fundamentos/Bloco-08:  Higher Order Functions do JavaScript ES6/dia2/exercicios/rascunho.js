@@ -63,22 +63,18 @@ const books = [
   },
 ];
 
-// Adicione o código do exercício aqui:
+/* function authorUnique() {
 
-// 2 - Retorne o nome do livro de menor nome.
-// Dica: use a função forEach .
-
-function smallerName() {
-  let nameBook;
-  books.forEach((element)=> {
-    if (element.name )
-  })
-  // Variável nameBook que receberá o valor do menor nome;
-  return nameBook;
+  return books.some((a) => 
+    books.some((b) => b.author.birthYear === a.author.birthYear));
 }
 
-assert.strictEqual(smallerName(), 'Duna');
+console.log(authorUnique());
+ */
 
-// Aplica-se a condicional if utilizando operadores lógicos. O primeiro é o not (!) antes de nameBook . Fazemos isso, pois o fato de nameBook não guardar nenhum valor é retornado "undefined" por padrão, consequentemente o JavaScript interpreta ele como um valor "falsy", que se traduz como "false" propriamente. Desta maneira, ao utilizar o operador not (!) antes de nameBook, estamos negando que ele seja falso, ou seja, convertendo-o para "true";
+function authorUnique() {
+  return !books.every(elementA => 
+    books.some((elementB) => elementA === elementB ))
+} 
 
-
+console.log(authorUnique(books))
