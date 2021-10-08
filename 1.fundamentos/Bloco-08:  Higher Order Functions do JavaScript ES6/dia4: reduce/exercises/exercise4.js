@@ -61,18 +61,25 @@ const books = [
     },
   ];
   
-//  2 - Crie uma string com os nomes de todas as pessoas autoras.
+  //4 - Encontre o livro com o maior nome.
+  
+  const expectedResult = {
+    id: 1,
+    name: 'As Crônicas de Gelo e Fogo',
+    genre: 'Fantasia',
+    author: {
+      name: 'George R. R. Martin',
+      birthYear: 1948,
+    },
+    releaseYear: 1991,
+  }
 
-function reduceNames() {
-  const names = books.reduce((strAcc, strCurr, index, array) => {
-    if (index === array.length-1) return `${strAcc} ${strCurr.author.name}.`;
-    return `${strAcc} ${strCurr.author.name},`
-  },'');
-  return names
+  
+function longestNamedBook() {
+  const longest = books.reduce((a, b) =>
+    a.name.length > b.name.length ? a : b);  
+  return longest.name;
 }
-console.log(reduceNames());
+console.log(longestNamedBook());
 
-
-
-const expectedResult = "George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.";
 
