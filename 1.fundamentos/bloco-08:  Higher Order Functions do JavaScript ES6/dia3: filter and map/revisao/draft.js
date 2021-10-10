@@ -9,6 +9,6 @@ const callback = (acumulador, valor) => {
     console.log(acumulador)
     return acumulador
 };
-//const valorInicial = {};
+
 const carrosIndexadosPorId = lista.reduce(callback, {});
 console.log(carrosIndexadosPorId[3]) //camaro :)

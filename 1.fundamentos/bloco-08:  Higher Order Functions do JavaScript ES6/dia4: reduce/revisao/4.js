@@ -78,9 +78,9 @@ const expectedResult = {
 function longestNamedBook() {
   return books.reduce((biggestBook, currentBook) => {
     if (biggestBook.name.length>currentBook.name.length) {
-      return biggestBook
+      return biggestBook;
     } 
-    return currentBook
+    return currentBook;
   })
 } 
 console.log(longestNamedBook()) 
