@@ -11,7 +11,7 @@ const newEmployees = (callback) => {
   };
   return employees;
 };
-console.log(newEmployees(hiredPerson));
+console.log(newEmployees());
 
 /* 
 // dissecando o codigo:

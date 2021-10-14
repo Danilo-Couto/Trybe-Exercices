@@ -10,7 +10,7 @@ Quando a resposta for correta a contagem sobe 1 ponto, quando for incorreta desc
 const RIGHT_ANSWERS =   ['A', 'C',   'B', 'D', 'A', 'A',  'D', 'A', 'D', 'C'];
 const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 
-/const check = () => {
+const check = () => {
     let points = 0;
     for (let i = 0 ; i < RIGHT_ANSWERS.length ; i+=1){
         if (STUDENT_ANSWERS[i] === 'N.A') {
@@ -25,13 +25,3 @@ const STUDENT_ANSWERS = ['A', 'N.A', 'B', 'D', 'A', 'C', 'N.A', 'A', 'D', 'B'];
 }
 console.log(check());
  
- 
-/* TENTAIVA...
- const hof = (RIGHT_ANSWERS, STUDENT_ANSWERS, check) => {
-    for (let i=0 ; i < RIGHT_ANSWERS.length ; i+=1){
-        check(RIGHT_ANSWERS[i], STUDENT_ANSWERS[i])
-    }
-    return points ;
-}
-
-//console.log(hof(RIGHT_ANSWERS, STUDENT_ANSWERS));

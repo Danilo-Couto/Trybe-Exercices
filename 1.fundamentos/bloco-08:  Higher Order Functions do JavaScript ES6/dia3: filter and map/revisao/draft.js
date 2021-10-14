@@ -6,9 +6,9 @@ const lista = [
 
 const callback = (acumulador, valor) => {
     acumulador[valor.id] = valor.nome
-    console.log(acumulador)
+    // console.log(acumulador)
     return acumulador
 };
 
 const carrosIndexadosPorId = lista.reduce(callback, {});
-console.log(carrosIndexadosPorId[3]) //camaro :)
+console.log(carrosIndexadosPorId)

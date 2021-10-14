@@ -9,9 +9,9 @@
     return employees;
   };
 
-  function contratados(nomeCompleto) {
+  function contratados({nomeCompleto}) {
     let nomeEmail = nomeCompleto.toLowerCase().split(' ').join('_');
-    return {name:nomeCompleto, email:`${nomeEmail}@trube.com` };
+    return {nomeCompleto, `${nomeEmail}@trube.com` };
   };
 
 console.log(newEmployees());
