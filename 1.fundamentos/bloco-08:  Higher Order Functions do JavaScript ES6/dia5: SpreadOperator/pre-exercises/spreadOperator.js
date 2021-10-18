@@ -32,7 +32,7 @@ const about = {
   occupation: 'Developer',
 };
 
-const customer = { ...people, ...about };
+const customer = {...people, ...about};
 console.log(customer); 
 
 /* {
