@@ -2,7 +2,7 @@ import React from "react";
 
 class Pokemons extends React.Component{
     render(){
-        console.log(this.props)
+        // console.log(this.props)
         const data = this.props.obj; // this.props monta um objeto q recebe obj como parametro
 
         return(
