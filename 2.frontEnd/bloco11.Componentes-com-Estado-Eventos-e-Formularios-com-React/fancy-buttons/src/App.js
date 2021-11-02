@@ -1,27 +1,41 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
 
-function handleCick() {
+
+class App extends React.Component {
+
+constructor() {
+  super ()
+  this.handleClick = this.handleClick.bind(this); // this.handleClick é redeclarado dizendo que ele esta ligado a this
+  this.handleClick2 = this.handleClick2.bind(this);
+  this.handleClick3 = this.handleClick3.bind(this);
+  console.log('componente sendo construído')
+}
+
+handleClick() {
+  console.log(this)
   console.log('clicou')
 }
 
-function handleCick2() {
+handleClick2() {
+  console.log(this)
   console.log('clicou de novo')
 }
 
-function handleCick3() {
+handleClick3() {
+  console.log(this)
   console.log('clicou mais uma vez')
 }
 
-
-function App() {
-  return (
+  render () { 
+    console.log(this)
+    return (
     <div>
-      <button onClick={handleCick}> Meu botão </button>
-      <button onClick={handleCick2}> Meu botão 2</button>
-      <button onClick={handleCick3}> Meu botão 3 </button>   
+      <button onClick={this.handleClick}> Meu botão </button>
+      <button onClick={this.handleClick2}> Meu   botão 2</button>
+      <button onClick={this.handleClick3}> Meu botão 3 </button> 
      </div>
-   );
+   );}
 }
 
 export default App;
