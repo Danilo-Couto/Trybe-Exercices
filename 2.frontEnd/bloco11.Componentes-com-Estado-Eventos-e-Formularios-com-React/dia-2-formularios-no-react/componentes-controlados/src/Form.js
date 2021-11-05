@@ -7,7 +7,7 @@ class Form extends React.Component {
     super(props);
     this.handleChange = this.handleChange.bind(this);
     this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    // this.handleSubmit = this.handleSubmit.bind(this); pq eu usei arrow function
 
     this.state = {
       dissertacao: 'Por favor, escreva uma dissertação sobre frutas',
@@ -17,17 +17,30 @@ class Form extends React.Component {
     };
   }
 
-  handleChange({target}){
+  /* handleChange (e){
+      this.setState ({
+        [e.target.name]: e.target.value, 
+      })
+    } */
+
+ /*  handleChange({target}){
     const {name,value} = target;
 
     this.setState ({
       [name]: value,
-    })
-  }
+  })  
+}
+  */ 
 
-  handleInputChange(event) {
+  handleChange({target: {name, value}}){
+    this.setState ({
+      [name]: value,
+  })  
+}
+
+  handleInputChange (event) {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.type === 'checkbox' ? target.checked: target.value;
     const name = target.name;
 
     this.setState({
@@ -35,12 +48,16 @@ class Form extends React.Component {
     });
   }
   
-  handleSubmit(event) {
-    alert(`${this.state.nome}, sua fruta favorita é ${this.state.fruta}`);
+  handleSubmit= (event) => {
     event.preventDefault();
+
+    const {nome, fruta} = this.state;
+    alert(`${nome}, sua fruta favorita é ${fruta}`);
   }
 
   render() {
+    const {dissertacao, fruta, likeFruit, nome} = this.state;
+
     return (
       <div>
         <h1> Meu Form </h1>
@@ -51,7 +68,7 @@ class Form extends React.Component {
             Dissertação:
             <textarea 
               name='dissertacao'
-              value={this.state.dissertacao}
+              value={dissertacao}
               onChange={this.handleChange} />
           </label>
         </fieldset>
@@ -60,7 +77,7 @@ class Form extends React.Component {
         Qual sua fruta favorita?
           <select 
             name='fruta'
-            value={this.state.fruta} 
+            value={fruta} 
             onChange={this.handleChange}>
               <option value="laranja">Laranja</option>
               <option value="limao">Limão</option>
@@ -69,18 +86,13 @@ class Form extends React.Component {
           </select> 
         </fieldset>
 
-
- {/*  <input type="checkbox" id="html" name="fav_language" value="HTML">
- </input>
-  <label for="html">HTML</label>  */}
-
         <fieldset>
             Você gosta de fruta?
             <input 
               name='likeFruit'
               type='checkbox'
               id = 'likeFruit'
-              checked={this.state.likeFruit}
+              checked={likeFruit}
               onChange={this.handleInputChange}      
               /> 
             <label htmlFor="likeFruit"> Sim </label>
@@ -90,7 +102,7 @@ class Form extends React.Component {
               name='likeFruit'
               type='checkbox'
               id = 'likeFruit'
-              checked={this.state.likeFruit}
+              checked={likeFruit}
               onChange={this.handleInputChange}      
               /> 
             <label htmlFor="notLikeFruit"> Não </label> */}
@@ -102,7 +114,7 @@ class Form extends React.Component {
             <input 
               type="text" 
               name='nome'
-              value={this.state.nome}
+              value={nome}
               onChange={this.handleChange} />
           </label>
         </fieldset>
