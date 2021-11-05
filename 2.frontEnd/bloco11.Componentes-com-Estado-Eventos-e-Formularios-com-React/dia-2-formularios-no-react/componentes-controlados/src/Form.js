@@ -1,5 +1,6 @@
 import React from 'react'
 import './Form.js'
+import LikeFruit from './components/LikeFruit.js';
 
 class Form extends React.Component {
 
@@ -85,29 +86,10 @@ class Form extends React.Component {
               <option value="manga">Manga</option>
           </select> 
         </fieldset>
-
-        <fieldset>
-            Você gosta de fruta?
-            <input 
-              name='likeFruit'
-              type='checkbox'
-              id = 'likeFruit'
-              checked={likeFruit}
-              onChange={this.handleInputChange}      
-              /> 
-            <label htmlFor="likeFruit"> Sim </label>
-
-{/* COMO FAZER TYPO RADIO */}
-{/*             <input 
-              name='likeFruit'
-              type='checkbox'
-              id = 'likeFruit'
-              checked={likeFruit}
-              onChange={this.handleInputChange}      
-              /> 
-            <label htmlFor="notLikeFruit"> Não </label> */}
         
-        </fieldset>            
+        <LikeFruit name = {likeFruit}  handleInputChange = {this.handleInputChange}
+ />
+
         <fieldset>
           <label htmlFor="nome">
           Nome:
