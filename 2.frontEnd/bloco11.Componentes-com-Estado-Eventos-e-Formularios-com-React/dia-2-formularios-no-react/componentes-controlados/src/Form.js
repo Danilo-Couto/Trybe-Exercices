@@ -39,7 +39,7 @@ class Form extends React.Component {
   })  
 }
 
-  handleInputChange (event) {
+/*   handleInputChange (event) {
     const target = event.target;
     const value = target.type === 'checkbox' ? target.checked: target.value;
     const name = target.name;
@@ -47,7 +47,16 @@ class Form extends React.Component {
     this.setState({
       [name]: value
     });
-  }
+  } */
+
+  handleInputChange ({target}) {
+      const { name } = target;
+      const value = (target.type === 'checkbox') ? target.checked : target.value
+      this.setState({
+        [value]: name,
+      });
+    }
+    
   
   handleSubmit= (event) => {
     event.preventDefault();
