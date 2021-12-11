@@ -7,4 +7,6 @@ const checkLotto = (theBet, randomNumb ) => {
   if (theBet !== randomNumb) return "Tente novamente"
       return "Parabéns você ganhou"  
   }
+   
+
   console.log(checkLotto())
