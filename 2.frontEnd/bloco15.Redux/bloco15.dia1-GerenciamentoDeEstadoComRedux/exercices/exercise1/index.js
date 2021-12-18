@@ -50,7 +50,7 @@
   };
 
   const store = Redux.createStore(meuReducer);
-/* 
+
   document.getElementById('next').addEventListener('click', () => {
     store.dispatch({ type: 'NEXT_COLOR' });
   });
@@ -59,7 +59,7 @@
   });
   document.getElementById('random').addEventListener('click', () => {
     store.dispatch({ type: 'RANDOM_COLOR' });
-  }); */
+  });
 
 /*   function prev() {
     store.dispatch({ type: 'NEXT_COLOR' })
