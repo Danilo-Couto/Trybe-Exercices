@@ -10,4 +10,3 @@ console.log(store.getState())
 // meuReducer: {/_estado do meuReducer_/},
 // meuOutroReducer: {/_estado do meuOutroReducer_/,}
 //}
-...
