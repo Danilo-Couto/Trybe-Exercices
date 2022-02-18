@@ -20,7 +20,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 2.2 - Git & GitHub - Entendendo os comandos
 - [X] 2.3 - Internet - Entendendo como ela funciona
 ​
-##### Bloco 3: _[Introdução à HTML e CSS](https://github.com/JeffThierch/Trybe-Exercicios/tree/master/Fundamentos/Bloco-03-Introducao-a-HTML-e-CSS)_
+##### Bloco 3: _[Introdução à HTML e CSS]_
 ​
 - [X] 3.1 - Introdução - HTML & CSS
 - [X] 3.1 - HTML & CSS - Estruturas de página
@@ -29,7 +29,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X]  3.4 - HTML Semântico
 - [X]  3.5 - Projeto - Lessons Learned
 ​
-##### Bloco 4: [Introdução à JavaScript e Lógica de Programação](https://github.com/JeffThierch/Trybe-Exercicios/tree/master/Fundamentos/Bloco-4-Introducao-JavaScript-e-Logica-Programacao)
+##### Bloco 4: [Introdução à JavaScript e Lógica de Programação]
 - [X] 4.1 - Introdução - JavaScript
 - [X] 4.1 - JavaScript - Primeiros passos
 - [X] 4.2 - JavaScript - Array e loop For
@@ -37,7 +37,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 4.4 - JavaScript - Objetos e funções
 - [X] 4.5 - Projeto - Playground Functions
 ​
-##### Bloco 5: [JavaScript: DOM, Eventos e Web Storage](https://github.com/JeffThierch/Trybe-Exercicios/tree/master/Fundamentos/Bloco-5-JavaScript-DOM-Eventos-WebStorage)
+##### Bloco 5: [JavaScript: DOM, Eventos e Web Storage]
 - [X] 5.1 - JavaScript - DOM e seletores
 - [X] 5.2 - JavaScript - Trabalhando com elementos
 - [X] 5.3 - JavaScript - Eventos
@@ -49,7 +49,7 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 5.7 - (Bônus) Projeto - Adivinhe a Cor
 - [X] 5.7 - (Bônus) Projeto - Carta Misteriosa
 ​
-##### Bloco 6: [HTML e CSS: Forms, Flexbox e Responsivo](https://github.com/JeffThierch/Trybe-Exercicios/tree/master/Fundamentos/Bloco-6-HTML-CSS-Flexbox-e-Responsividade)
+##### Bloco 6: [HTML e CSS: Forms, Flexbox e Responsivo]
 - [X] 6.1 - HTML & CSS - Forms
 - [X] 6.2 - Bibliotecas JavaScript e Frameworks CSS
 - [X] 6.3 - Introdução - CSS Flexbox
@@ -58,13 +58,13 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 6.5 - CSS Responsivo - Mobile First
 - [X] 6.6 - Projeto - Trybewarts
 ​
-##### Bloco 7: [Introdução à JavaScript ES6 e Testes Unitários](https://github.com/JeffThierch/Trybe-Exercicios/tree/master/Fundamentos/Bloco-7-Introducao-ES6-E-Testes-Unitarios)
+##### Bloco 7: [Introdução à JavaScript ES6 e Testes Unitários]
 - [X] 7.1 - JavaScript ES6 - let, const, arrow functions e template literals
 - [X] 7.2 - JavaScript ES6 - Objects
 - [X] 7.3 - Primeiros passos em Jest
 - [X] 7.4 - Projeto - JavaScript Testes Unitários
 ​
-##### Bloco 8: [Higher Order Functions do JavaScript ES6](https://github.com/JeffThierch/Trybe-Exercicios/tree/master/Fundamentos/Bloco-8-Higher-Order-Functions-Do-JavaScript-ES6/Dia-1-Introducao-A-Higher-Order-Functions)
+##### Bloco 8: [Higher Order Functions do JavaScript ES6](https://github.com/Danilo-Couto/Trybe-Exercices/tree/main/1.fundamentos/bloco-08:%20%20Higher%20Order%20Functions%20do%20JavaScript%20ES6)
 - [X] 8.1 - JavaScript ES6 - Introduçao a Higher Order Functions
 - [X] 8.2 - JavaScript ES6 - Higher Order Functions - forEach, find, some, every, sort
 - [X] 8.3 - JavaScript ES6 - Higher Order Functions - map e filter
