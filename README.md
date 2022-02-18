@@ -108,33 +108,33 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [X] 14.4 - Projeto - React Testing Library
 ​
 ##### Bloco 15: Gerenciamento de estado com Redux
-- [ ] 15.1 - Introdução ao Redux - O estado global da aplicação
-- [ ] 15.2 - Usando o Redux no React
-- [ ] 15.3 - Usando o Redux no React - Prática
-- [ ] 15.4 - Usando o Redux no React - Actions Assíncronas
-- [ ] 15.5 - Testes síncronos com React-Redux
-- [ ] 15.6 - Projeto - Trybe Wallet
+- [X] 15.1 - Introdução ao Redux - O estado global da aplicação
+- [X] 15.2 - Usando o Redux no React
+- [X] 15.3 - Usando o Redux no React - Prática
+- [X] 15.4 - Usando o Redux no React - Actions Assíncronas
+- [X] 15.5 - Testes síncronos com React-Redux
+- [X] 15.6 - Projeto - Trybe Wallet
 ​
 ##### Bloco 16: Projeto Jogo de Trivia
-- [ ] 16.1 - Projeto - Jogo de Trivia
+- [X] 16.1 - Projeto - Jogo de Trivia
 ​
 ##### Bloco 17: Context API e React Hooks
-- [ ] 17.1 - Context API do React
-- [ ] 17.2 - React Hooks - useState e useContext
-- [ ] 17.3 - React Hooks - useEffect e Hooks customizados
-- [ ] 17.4 - Projeto - StarWars Datatable com Context API e Hooks
+- [X] 17.1 - Context API do React
+- [X] 17.2 - React Hooks - useState e useContext
+- [X] 17.3 - React Hooks - useEffect e Hooks customizados
+- [X] 17.4 - Projeto - StarWars Datatable com Context API e Hooks
 ​
 ##### Bloco 18: Projeto App de Receitas
-- [ ] 18.1 - Projeto - App de Receitas
+- [X] 18.1 - Projeto - App de Receitas
 ​
 ## Desenvolvimento Back-end :hourglass_flowing_sand:
 ​
 ##### Bloco 19: Docker: Utilizando Containers
-- [ ] 19.1 - Introdução - Back-end
-- [ ] 19.1 - Utilizando Containers - Docker
-- [ ] 19.2 - Manipulação e Criação de Imagens no Docker
-- [ ] 19.3 - Orquestrando Containers com Docker Compose
-- [ ] 19.4 - Projeto - Docker Todo-List
+- [X] 19.1 - Introdução - Back-end
+- [X] 19.1 - Utilizando Containers - Docker
+- [X] 19.2 - Manipulação e Criação de Imagens no Docker
+- [X] 19.3 - Orquestrando Containers com Docker Compose
+- [X] 19.4 - Projeto - Docker Todo-List
 ​
 ##### Bloco 20: Introdução â SQL
 - [ ] 20.1 - Introdução - Banco de dados relacionais
