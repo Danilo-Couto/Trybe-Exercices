@@ -1,17 +1,15 @@
 {
-  "name": "my-script",
+  "name": "jogo-de-adivinhacao",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "imc": "node imc.js"
+    "start": "node sorteio.js"
   },
   "author": "danilo-couto",
   "license": "ISC",
   "dependencies": {
     "readline-sync": "^1.4.10"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
