@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
-    "imc": "node imc.js"
+    "imc": "node imc.js",
+    "velocidade":"node velocidade.js",
+    "sorteio": "node sorteio.js"
   },
   "author": "danilo-couto",
   "license": "ISC",
