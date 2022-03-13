@@ -18,15 +18,22 @@ const readline = require('readline-sync');
 } */
 
 
-function calcFibo(n){   
+/* function calcFibo(n){   
     const array = [0,1];
     for (let j = 1; j < n ; j++) {
         let soma = 0;
-
         array.forEach(el => {
             soma+=el
         });
-
+        array.push(soma)
+    }
+    return array.splice(1);
+}
+ */
+function calcFibo(n){   
+    const array = [0,1];
+    for (let j = 1; j < n ; j+=1) {
+        let soma = array.reduce((x,y) => x + y, 0);
         array.push(soma)
     }
     return array.splice(1);
