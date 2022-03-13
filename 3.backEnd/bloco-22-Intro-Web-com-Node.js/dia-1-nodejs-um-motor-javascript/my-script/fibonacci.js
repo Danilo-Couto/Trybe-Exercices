@@ -2,44 +2,24 @@ const readline = require('readline-sync');
 
 // A sequência de fibonacci começa com 0 e 1 e os números seguintes são sempre a soma dos dois números anteriores.
 
-/* function calcFibo(n){   
-    const array = [0,1];
-
-    for (let j = 1; j < n ; j++) {
-        let soma = 0;
-
-        for (let i = 0; i < array.length; i++) {
-            soma += array[i];
-        }
-
-        array.push(soma)
+function calcFibo(n) {
+    const fibSequence = [1];
+    let curr = 1;
+    let prev = 0;
+  
+    if (n === 1) {
+      return fibSequence;
     }
-    return array.splice(1);
-} */
-
-
-/* function calcFibo(n){   
-    const array = [0,1];
-    for (let j = 1; j < n ; j++) {
-        let soma = 0;
-        array.forEach(el => {
-            soma+=el
-        });
-        array.push(soma)
+    for (let i = 0 ; i < n ; i++ ) {
+        curr += prev;
+        prev = curr - prev;
+        fibSequence.push(curr);
     }
-    return array.splice(1);
-}
- */
-function calcFibo(n){   
-    const array = [0,1];
-    for (let j = 1; j < n ; j+=1) {
-        let soma = array.reduce((x,y) => x + y, 0);
-        array.push(soma)
-    }
-    return array.splice(1);
-}
+  
+    return fibSequence;
+  }
 
-function calculo() {
+  function calculo() {
     const n = readline.questionInt('Informe o valor de n para a Sequencia de Fibonacci: ');
     if (n <= 0) {
         console.log('Digite um número maior que 0!')
