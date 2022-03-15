@@ -10,7 +10,8 @@ function doMath(a, b, c) {
             reject(new Error('Informe apenas números'));
       
         const sum = ((a + b) * c );
-        if (sum<50) return reject('Valor muito baixo')
+        if (sum<50) 
+          reject(new Error('Valor muito baixo'))
     
         resolve(sum);
     }); 
@@ -30,6 +31,7 @@ doMath(1, 1, 1)
   .then(resolve => console.log(resolve))
   .catch(error => console.log(error)) */
 
+
 // Escreva um código para consumir a função construída no exercício anterior.
   // Gere um número aleatório de 1 a 100 para cada parâmetro que a função recebe. Para gerar um número aleatório, utilize o seguinte trecho de código: Math.floor(Math.random() * 100 + 1) .
   // Chame a função do exercício anterior, passando os três números aleatórios como parâmetros.
@@ -38,18 +40,18 @@ doMath(1, 1, 1)
   // Caso a Promise seja resolvida, escreva na tela o resultado do cálculo.
 
 function getRandomNumber() {
-  return Math.floor(Math.random() * 100 + 1);
+  return Math.floor(Math.random() * 101);
 }
-/* 
+
 function callDoMath() {
   const randomNumbers = Array.from({ length: 3 }).map(getRandomNumber);
 
-doMath(...randomNumbers)
-  .then(result => console.log(`sucesso: ${result}`))
-  .catch(err => console.error(`falha: ${err.message}`))
+  doMath(...randomNumbers)
+    .then(result => console.log(`sucesso: ${result}`))
+    .catch(err => console.error(`falha: ${err.message}`))
 }
 
-callDoMath(); */
+callDoMath();
 
 
 // Reescreva o código do exercício anterior para que utilize async/await.
