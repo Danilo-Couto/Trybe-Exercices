@@ -55,4 +55,8 @@ app.post('/simpsons',
     res.status(204).end();
 })
 
-app.listen(3001, () => console.log('ouvindo na porta 3001!'));
+app.use(function (err, req, res, next) {
+    res.status(500).send(`Algo deu errado! Mensagem: ${err.message}`);
+  });
+  
+  app.listen(3001, () => console.log('ouvindo na porta 30001!'));
