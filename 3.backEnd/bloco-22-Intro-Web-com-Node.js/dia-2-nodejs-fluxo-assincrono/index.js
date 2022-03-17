@@ -19,7 +19,8 @@ function doMath(a, b, c) {
     return promise;
 }
 
-/* doMath(10, 10, 10)
+/* 
+doMath(10, 10, 10)
   .then(resolve => console.log(resolve))
   .catch(error => console.log(error))
 

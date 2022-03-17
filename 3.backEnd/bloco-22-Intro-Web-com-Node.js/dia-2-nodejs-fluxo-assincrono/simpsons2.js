@@ -6,16 +6,13 @@ const fs = require('fs').promises;
 const simpsonsFile = './simpsons.json';
 
 async function getSimpsonById(id) {
-    const simpsons = await fs
-        .readFile(simpsonsFile, 'utf-8')
-        .then((content) => JSON.parse(content));
+    const content = await fs.readFile(simpsonsFile, 'utf-8')
+    const simpsons = JSON.parse(content);
 
-    console.log(simpsons);
-    const chosenSimpson = simpsons.find((simpson) => simpson.id === id);
+    const chosenSimpson = simpsons.find((simpson) => Number(simpson.id) == id);
     
     if (!chosenSimpson) { throw new Error('id não encontrado');}
 
-    console.log(chosenSimpson);
     return chosenSimpson;
 }
 
