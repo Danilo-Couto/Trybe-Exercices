@@ -10,7 +10,7 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('./btc/price', async function(req, res){
+app.get('/btc/price', async function(req, res){
   const token = req.headers.authorization;
   const tokenRegex = !/^[a-zA-Z0-9]{12}$/;
 

@@ -9,7 +9,8 @@ const app = express();
 app.use(bodyParser.json());
 
 
-app.get('./posts', userRouter);
+app.get('/posts', userRouter);
+
 
 app.use('*', (_req, _res, next) => next({ statusCode: 404, message: 'Opsss router not found' }));
 app.use(errors.routerNotFound);

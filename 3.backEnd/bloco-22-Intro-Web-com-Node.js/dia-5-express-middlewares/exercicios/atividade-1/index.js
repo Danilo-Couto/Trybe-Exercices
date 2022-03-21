@@ -15,7 +15,7 @@ const users = [
         }
 ];
 
-app.get('./user', userRouter);
+app.get('/user', userRouter);
 
 app.all('*', function (req, res) {
     return res.status(404).json({ message: `Rota '${req.path}' não existe!`});
