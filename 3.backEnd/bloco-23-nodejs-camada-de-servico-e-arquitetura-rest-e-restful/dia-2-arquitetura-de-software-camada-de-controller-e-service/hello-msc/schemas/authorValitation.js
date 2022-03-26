@@ -6,7 +6,7 @@ const errors = {
 const blank = (value) => (!value);
 const notString = (value) => (typeof value !== 'string');
 
-const isValid = (firstName, middleName, lastName) => {
+const isValidPost = (firstName, middleName, lastName) => {
     const code = 422;
 
     switch(true) {
@@ -23,5 +23,5 @@ const isValid = (firstName, middleName, lastName) => {
 };
 
 module.exports = {
-    isValid
+    isValidPost
 }

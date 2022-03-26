@@ -1,5 +1,5 @@
 const Author = require('../models/Author');
-const authorSchema = require('../schemas/authorSchema');
+const authorValitation = require('../schemas/authorValitation');
 
 const fullNameMaker = (authorData) => {
   const { id, firstName, middleName, lastName } = authorData;
@@ -27,7 +27,7 @@ const findById = async (id) => {
 };
 
 const createAuthor = async (firstName, middleName, lastName) => {
-  const validAuthor = authorSchema.isValid(firstName, middleName, lastName);
+  const validAuthor = authorValitation.isValid(firstName, middleName, lastName);
   if (validAuthor.message) return validAuthor;
 
   const author = await Author.createAuthor(firstName, middleName, lastName);
