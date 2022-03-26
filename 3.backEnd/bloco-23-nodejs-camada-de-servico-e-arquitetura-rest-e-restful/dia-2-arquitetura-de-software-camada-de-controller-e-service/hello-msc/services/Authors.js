@@ -1,4 +1,5 @@
 const Author = require('../models/Author');
+const authorSchema = require('../schemas/authorSchema');
 
 const fullNameMaker = (authorData) => {
   const { id, firstName, middleName, lastName } = authorData;
@@ -25,15 +26,8 @@ const findById = async (id) => {
   return fullNameMaker(author);
 };
 
-const isValid = (firstName, middleName, lastName) => {
-  if (!firstName || typeof firstName !== 'string') return {code: 422, message: 'É obrigatório informar firstName e ele deve ser string'};
-  if (!lastName || typeof lastName !== 'string') return {code: 422, message: 'É obrigatório informar middleName e ele deve ser string'};
-  if (!middleName || typeof middleName !== 'string') return {code: 422, message: 'É obrigatório informar lastName e ele deve ser string'};
-  return {};
-}
-
 const createAuthor = async (firstName, middleName, lastName) => {
-  const validAuthor = isValid(firstName, middleName, lastName);
+  const validAuthor = authorSchema.isValid(firstName, middleName, lastName);
   if (validAuthor.message) return validAuthor;
 
   const author = await Author.createAuthor(firstName, middleName, lastName);
