@@ -13,9 +13,9 @@ app.get('/authors', rescue(Author.getAll));
 app.get('/authors/:id', rescue(Author.findById));
 app.post('/authors', rescue(Author.createAuthor));
 
-app.get('/books', Book.getAll);
-app.get('/books/:id', Book.findById);
-app.post('/books', Book.createBook);
+app.get('/books', rescue(Book.getAll));
+app.get('/books/:id', rescue(Book.findById));
+app.post('/books', rescue(Book.createBook));
 
 app.use(errorMiddleware);
 
