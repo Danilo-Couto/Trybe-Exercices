@@ -1,3 +1,5 @@
+// depois de usar o JOI, este modulo fica inútil
+
 const errors = {
     messageBlank: 'É obrigatório informar name',
     messageNotString: 'Name deve ser string',

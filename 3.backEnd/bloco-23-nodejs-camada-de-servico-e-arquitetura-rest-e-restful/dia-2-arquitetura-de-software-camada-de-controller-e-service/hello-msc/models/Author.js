@@ -1,4 +1,3 @@
-// hello-msc/models/Author.js
 const connection = require('./connection');
 
 // Converte o nome dos campos de snake_case para camelCase
@@ -24,10 +23,28 @@ const findById = async (id) => {
   return serialize(authorData)[0];
 };
 
+const findByName = async (firstName, middleName, lastName) => {
+  let query = 'SELECT id, first_name, middle_name, last_name ' +
+              'FROM model_example.authors ';
+    if (middleName) {
+      query += 'WHERE first_name = ? AND middle_name = ? AND last_name = ?';
+    } else {
+      query += 'WHERE first_name = ? AND last_name = ?';
+    }
+
+  const params = middleName ? [firstName, middleName, lastName] : [firstName, lastName];
+
+  const [authorData] = await connection.execute(query, params);
+  if (authorData.length === 0) return null;
+
+  return serialize(authorData);
+};
+
 const createAuthor = async (firstName, middleName, lastName) => {
-  const query = 'INSERT INTO model_example.authors (first_name, middle_name, last_name) VALUES (?, ?, ?)'
+  const query = 'INSERT INTO model_example.authors (first_name, middle_name, last_name) VALUES (?, ?, ?)';
   const [author] = await connection.execute(query,[firstName, middleName, lastName]
   );
+  
   return { id: author.insertId, firstName, middleName, lastName };
 }
 
@@ -35,4 +52,5 @@ module.exports = {
   getAll,
   findById,
   createAuthor,
+  findByName
 };
