@@ -26,9 +26,7 @@ const findAddressByCep = async (searchedCep) => {
   };
 
 const createAddress = async (cep, logradouro, bairro, localidade, uf) => {
-
   const requiredNonEmptyString = JOI.string().not().empty().required();
-
   const { error } = JOI.object({
       cep: JOI.string().regex(/\d{5}-\d{3}/).required(),
       logradouro: requiredNonEmptyString,

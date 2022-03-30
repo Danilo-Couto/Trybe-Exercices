@@ -1,4 +1,4 @@
-const handleErrors = (err, _req, res, _next) => {
+module.exports = (err, _req, res, _next) => {
     if (err.isJoi) {
       return res.status(400)
         .json({ error: { message: err.details[0].message } });
@@ -13,5 +13,3 @@ const handleErrors = (err, _req, res, _next) => {
     console.log(err);
     res.status(status).json({ error: { message: err.message } });
   };
-  
-  module.exports = handleErrors;
