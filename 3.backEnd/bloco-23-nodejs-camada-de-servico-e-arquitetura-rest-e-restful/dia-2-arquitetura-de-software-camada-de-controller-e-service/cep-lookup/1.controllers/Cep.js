@@ -19,21 +19,9 @@ const findAddressByCep = async(req, res, next) => {
 const createAddress = async (req, res, next) => {
     const { cep, logradouro, bairro, localidade, uf } = req.body;
 
-    const requiredNonEmptyString = JOI.string().not().empty().required();
-
-    const { error } = JOI.object({
-        cep: JOI.string().regex(/\d{5}-\d{3}/).required(),
-        logradouro: requiredNonEmptyString,
-        bairro: requiredNonEmptyString,
-        localidade: requiredNonEmptyString,
-        uf: requiredNonEmptyString.length(2),
-    }).validate(req.body);
-
-    if (error) return next(error);
-
     const newAddress = await Cep.createAddress(cep, logradouro, bairro, localidade, uf);
 
-    if (newAddress.error) return next (newAddress.error);
+    if (newAddress.error) return next(newAddress.error);
 
     return res.status(200).json(newAddress);
 };
