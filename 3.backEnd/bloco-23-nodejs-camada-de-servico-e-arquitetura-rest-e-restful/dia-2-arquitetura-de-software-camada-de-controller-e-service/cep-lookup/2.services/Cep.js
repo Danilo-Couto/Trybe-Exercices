@@ -44,7 +44,6 @@ const createAddress = async (cep, logradouro, bairro, localidade, uf) => {
   return await Cep.createAddress(cep, logradouro, bairro, localidade, uf);
 };
 
-
 module.exports = {
     getAll,
     findAddressByCep,
