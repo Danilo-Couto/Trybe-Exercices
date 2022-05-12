@@ -12,16 +12,29 @@ O nome da categoria deve possuir pelo menos 3 caracteres;
 A query param de data de criação deve ser no formato: aaaa-mm-dd;
  */
 
-const scheme = JOI.object({
+const schemeEdit = JOI.object({
+  title: JOI.string().not().empty().required(),
+  author: JOI.string().min(3).not().empty().required(),
+  category: JOI.string().min(3).not().empty().required(),
+});
+
+const schemeCreate = JOI.object({
   title: JOI.string().not().empty().required(),
   author: JOI.string().min(3).not().empty().required(),
   category: JOI.string().min(3).not().empty().required(),
   publicationDate: JOI.date().required(),
 });
 
-export const validaPost = (req: Request, _res: Response, next: NextFunction) => {
+export const validaPostCreate = (req: Request, _res: Response, next: NextFunction) => {
   const { title, author, category, publicationDate } = req.body;
-  const { error } = scheme.validate({ title, author, category, publicationDate});
+  const { error } = schemeCreate.validate({ title, author, category, publicationDate});
+  if (error) throw error;
+  next();
+};
+
+export const validaPostEdit = (req: Request, _res: Response, next: NextFunction) => {
+  const { title, author, category } = req.body;
+  const { error } = schemeEdit.validate({ title, author, category});
   if (error) throw error;
   next();
 };
