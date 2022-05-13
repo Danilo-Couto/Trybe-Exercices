@@ -6,10 +6,11 @@ const router = Router();
 
 const postControler = new PostController();
 
-router.get('/posts', postControler.getAll);
-router.get('/posts/:id', postControler.getById);
-router.post('/posts/', validaPostCreate, postControler.create);
-router.put('/posts/:id', validaPostEdit, postControler.update);
-router.delete('/posts/:id', postControler.remove);
+router.get('/search', postControler.getBySearchTerm);
+router.get('/:id', postControler.getById);
+router.put('/:id', validaPostEdit, postControler.update);
+router.delete('/:id', postControler.remove);
+router.get('/', postControler.getAll);
+router.post('/', validaPostCreate, postControler.create);
 
 export default router;

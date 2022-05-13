@@ -32,4 +32,9 @@ export default class postService {
     const postFound = await this.model.getById(id);
     this.model.remove(id);
   }
+
+  public async getBySearchTerm(term: string) {
+    const data = await this.model.getAllBySearchTerm(term);
+    return data;
+  } 
 };

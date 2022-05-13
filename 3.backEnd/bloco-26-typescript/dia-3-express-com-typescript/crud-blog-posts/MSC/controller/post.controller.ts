@@ -9,7 +9,7 @@ export default class PostController {
 
   getPostById = async (id: number) => await this.postService.getById(id);
 
-  public getAll = async (_req: Request, res: Response) => {
+  public getAll = async (req: Request, res: Response) => {
     const posts = await this.postService.getAll();
     res.status(StatusCodes.OK).json(posts);
   };
@@ -54,4 +54,15 @@ export default class PostController {
 
     res.status(StatusCodes.OK).json({ message: 'Post deleted successfully' });
   };
+
+  public async getBySearchTerm(req: Request, res: Response) {
+    const search = req.query.search as string;
+    const data = await this.postService.getBySearchTerm(search);
+    console.log(search);
+
+    if (!data) return res.status(StatusCodes.NOT_FOUND)
+    .json(notFound);
+
+    res.status(StatusCodes.OK).json(data);
+  }
 };

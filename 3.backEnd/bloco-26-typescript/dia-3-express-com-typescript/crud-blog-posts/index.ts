@@ -15,7 +15,8 @@ app.get('/', (req: Request, res: Response) => {
     res.status(StatusCodes.OK).send('Express + TypeScript')
 });
 
-app.use(postsRoute); // coloque essa linha antes do middleware de erro!
+app.use('/posts', postsRoute);// coloque essa linha antes do middleware de erro!
+
 
 app.use(errorMiddleware);
 
