@@ -55,12 +55,11 @@ export default class PostController {
     res.status(StatusCodes.OK).json({ message: 'Post deleted successfully' });
   };
 
-  public async getBySearchTerm(req: Request, res: Response) {
-    const search = req.query.search as string;
+  public getBySearchTerm = async (req: Request, res: Response) => {
+    const search = req.params.search as string;
     const data = await this.postService.getBySearchTerm(search);
-    console.log(search);
 
-    if (!data) return res.status(StatusCodes.NOT_FOUND)
+    if (!data || data.length === 0) return res.status(StatusCodes.NOT_FOUND)
     .json(notFound);
 
     res.status(StatusCodes.OK).json(data);
