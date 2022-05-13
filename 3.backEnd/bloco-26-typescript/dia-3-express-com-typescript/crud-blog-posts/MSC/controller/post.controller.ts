@@ -9,11 +9,24 @@ export default class PostController {
 
   getPostById = async (id: number) => await this.postService.getById(id);
 
+  getBySearchTerm = async (query: string,  res: Response) => {
+    const data = await this.postService.getBySearchTerm(query);
+
+    if (!data || data.length === 0) return res.status(StatusCodes.NOT_FOUND)
+    .json(notFound);
+
+    res.status(StatusCodes.OK).json(data);
+  }
+  
   public getAll = async (req: Request, res: Response) => {
+    const query = req.query.q as string;
+
+    if (query) return this.getBySearchTerm(query, res);
+
     const posts = await this.postService.getAll();
     res.status(StatusCodes.OK).json(posts);
   };
-
+  
   public getById = async (req: Request, res: Response) => {
     const id = parseInt(req.params.id);
     const post = await this.getPostById(id);
@@ -55,13 +68,4 @@ export default class PostController {
     res.status(StatusCodes.OK).json({ message: 'Post deleted successfully' });
   };
 
-  public getBySearchTerm = async (req: Request, res: Response) => {
-    const search = req.params.search as string;
-    const data = await this.postService.getBySearchTerm(search);
-
-    if (!data || data.length === 0) return res.status(StatusCodes.NOT_FOUND)
-    .json(notFound);
-
-    res.status(StatusCodes.OK).json(data);
-  }
 };
