@@ -1,8 +1,5 @@
  import { NextFunction, Request, Response } from 'express';
  import JOI from 'joi';
-import { takeCoverage } from 'v8';
-// import { StatusCodes } from 'http-status-codes';
-// import Post from '../interface/post.interface';
 
 /* 
 Regras:

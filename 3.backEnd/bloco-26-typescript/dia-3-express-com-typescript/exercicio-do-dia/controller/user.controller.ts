@@ -33,7 +33,7 @@ class UserController {
     const id = Number(req.params.id);
     const user = req.body;
     const userUpdated = await this.userService.update(id, user);
-    console.log(userUpdated.email);
+    
     res.status(StatusCodes.OK).json({ message: `${userUpdated.email} updated successfully` });
   };
 

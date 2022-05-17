@@ -39,8 +39,8 @@ class UserController {
             const id = Number(req.params.id);
             const user = req.body;
             const userUpdated = yield this.userService.update(id, user);
-            console.log(userUpdated);
-            res.status(http_status_codes_1.StatusCodes.NO_CONTENT).json({ message: `${userUpdated} updated successfully` });
+            console.log(userUpdated.email);
+            res.status(http_status_codes_1.StatusCodes.OK).json({ message: `${userUpdated.email} updated successfully` });
         });
         this.remove = (req, res) => __awaiter(this, void 0, void 0, function* () {
             const id = Number(req.params.id);
