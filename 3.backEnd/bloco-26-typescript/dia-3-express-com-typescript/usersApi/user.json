@@ -1,0 +1,16 @@
+[
+  {
+    "id": "c9e4cc50771c6d94",
+    "name": "Administrator",
+    "email": "admin@mail.com",
+    "password": "dda26f6c25e9abb87c9602fee97c15b8",
+    "role": "admin"
+  },
+  {
+    "id": "344c6cf20d45a42f",
+    "name": "rafareis",
+    "email": "rafareis@mail.com",
+    "password": "e10adc3949ba59abbe56e057f20f883e",
+    "role": "user"
+  }
+]
