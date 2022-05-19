@@ -11,7 +11,7 @@ class SuperClass {
 
 class SubClass extends SuperClass {
     constructor() {
-        super();
+        super(); // é preciso chamar o constructor da classe pai para recriar o que o this.constructor da class filha nao constroe
         this.isSuper = false;
     }
 
@@ -30,4 +30,3 @@ const sub = new SubClass();
 
 myFunc(sup);
 myFunc(sub);
-
