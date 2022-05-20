@@ -4,9 +4,3 @@ export default interface IEmployee {
     admissionDate: Date;
     generateRegistration(): string;
 }
-
-/* class Employee {
-    constructor(parameters) {
-        
-    }
-} */

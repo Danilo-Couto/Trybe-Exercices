@@ -1,10 +1,7 @@
-export default class Person {
-    // private _name: string;
-    // private _birthdate: Date;
-      
+export default class Person {    
     constructor(private _name: string, private _birthdate: Date) {
-      this._name = _name;
-      this._birthdate = _birthdate;
+      this._name = _name; // nem precisaria declarar, já que esta no constructor que ja faz internamente essas definicoes (this._name = _name)
+      this._birthdate = _birthdate; // nem precisaria declarar
     }
     
     get name(): string { return this._name; } 
