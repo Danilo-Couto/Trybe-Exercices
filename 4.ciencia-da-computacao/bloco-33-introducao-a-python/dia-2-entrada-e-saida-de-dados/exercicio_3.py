@@ -29,8 +29,8 @@ def check_game_result(secret_word, guesses):
         print("You lose")
 
 
-if __name__ == "__main__":
-    with open("words.txt") as file:
+if __name__ == "__main__": # script para mandar executar apenas quando a execução é no proprio arquivo
+    with open("words.txt") as file: #  declarado assim é modo de leitura, não cria o arquivo se não existe (é preciso cria-lo antes)
         words = retrieve_words(file)
     secret_word, scrambled_word = draw_secret_word(words)
     print(f"Scrambled word is {scrambled_word}")
