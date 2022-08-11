@@ -51,7 +51,5 @@ interador = baralho1.__iter__()
 # print(interador.__next__())
 # print(interador.__next__())
 
-# for carta in baralho1:
-#     print(carta)
-
-print(dir(Baralho()))
+for carta in baralho1:
+    print(carta)
