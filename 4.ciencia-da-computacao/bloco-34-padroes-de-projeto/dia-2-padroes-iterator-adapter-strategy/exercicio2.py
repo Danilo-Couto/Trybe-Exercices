@@ -1,4 +1,5 @@
 from collections.abc import Iterator, Iterable
+from curses.ascii import BS
 
 
 class Carta:
@@ -7,21 +8,21 @@ class Carta:
         self.naipe = naipe
 
     def __repr__(self):
-        return "<%%s de %s>" % (self.valor, self.naipe)
+        return f"{self.valor} de {self.naipe}"
 
 
 class IteradorDoBaralho(Iterator):
     def __init__(self, cartas):
         self._cartas = cartas
-        self.current = 0
+        self._pos = 0
 
     def __next__(self):
         try:
-            carta = self._cartas[self.current]
+            carta = self._cartas[self._pos]
         except IndexError:
             raise StopIteration()
         else:
-            self.current += 1
+            self._pos += 1
             return carta
 
 
@@ -40,6 +41,17 @@ class Baralho(Iterable):
     def __iter__(self):
         return IteradorDoBaralho(self._cartas)
 
-# Primeiro instanciamos o ITERÁVEL
 
-# Em seguida podemos usar o for pra iterar. Nesse momento o ITERADOR é criado implicitamente
+baralho1 = Baralho()
+
+interador = baralho1.__iter__()
+# print(interador.__next__())
+# print(interador.__next__())
+# print(interador.__next__())
+# print(interador.__next__())
+# print(interador.__next__())
+
+# for carta in baralho1:
+#     print(carta)
+
+print(dir(Baralho()))
