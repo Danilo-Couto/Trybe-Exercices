@@ -1,0 +1,28 @@
+// Utilizando o mongoimport, importe o arquivo books.json para a sua instância local do MongoDB e utilize a coleção books para construir as seguintes consultas:
+// 🚀 Exercício 7: Retorne a quantidade de documentos da coleção books.
+// 🚀 Exercício 8: Conte quantos livros existem com o status = "PUBLISH".
+// 🚀 Exercício 9: Exiba os atributos title, isbn e pageCount dos 3 primeiros livros. NÃO retorne o atributo _id.
+// Exercício 10: Pule 5 documentos e exiba os atributos _id, title, authors e status dos livros com o status = "MEAP", limitando-se a 10 documentos.
+
+const database = 'class';
+const collection = 'books';
+
+use(database);
+db.books.countDocuments({status : "PUBLISH"})
+
+db.books.find({}, {title:1, isbn:1, pageCount:1, _id: 0}).limit(3).pretty()
+
+db.books.countDocuments({status : "PUBLISH"})
+
+db.books.find({}, {title:1, isbn:1, pageCount:1, _id: 0}).limit(6).pretty()
+
+db.books.find({status: "MEAP"}, {_id:1, title:1, authors:1, status:1,}).skip(5).limit(10).pretty();
+
+//procurar elementos dentro de um array:
+db.produtos.find(
+  { ingredientes: { $in: ["picles"] } },
+  {
+    _id: 0, nome: 1, ingredientes: 1, 
+    valoresNutricionais: { $slice: 3 },
+  },
+); 
