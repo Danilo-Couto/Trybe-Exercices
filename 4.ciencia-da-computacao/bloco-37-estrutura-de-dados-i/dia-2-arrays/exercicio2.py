@@ -9,10 +9,22 @@ produtos = [1, 3, 1, 1, 2, 3]
 def get_combination(produtos):
     comb = []
     for index, produto in enumerate(produtos):
-        for index2 in range(index+1, len(produtos)):
-            if produto == produtos[index2]:
-                comb.append((index, index2))
+        [comb.append((index, index2)) for index2 in range(index+1, len(produtos))
+            if produto == produtos[index2]]
+
     return len((comb))
 
+
+# gabarito
+# def get_combination(numbers):
+#     answer = 0
+#     i = 0
+#     size = len(numbers)
+#     for i in range(size):
+#         for j in range(i + 1, size):
+#             if numbers[i] == numbers[j]:
+#                 answer += 1
+#     return answer
+    
 
 print(get_combination(produtos))
