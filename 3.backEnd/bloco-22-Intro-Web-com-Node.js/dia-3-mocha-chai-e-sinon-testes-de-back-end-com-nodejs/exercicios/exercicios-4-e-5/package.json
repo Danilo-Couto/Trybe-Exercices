@@ -1,0 +1,17 @@
+{
+  "name": "exercicios-4-e-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "writeFile.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha escrevaArquivo.test.js"
+  },
+  "author": "danilo-couto",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "mocha": "^9.2.2",
+    "sinon": "^13.0.1"
+  }
+}
