@@ -1,0 +1,23 @@
+version: '3.4'
+services:
+  mongo:
+    image: mongo
+    container_name: container_mongo
+    ports:
+      - "27017:27017"
+    restart: always
+  api: 
+    image: node
+    container_name: container_api
+    restart: always
+    depends_on:
+      - mongo
+    environment:
+      - DB_HOST=mongo
+      - SERVER_PORT=3001
+    ports:
+      - 3001:3001
+    volumes:
+      - ./:/usr/app
+    working_dir: /usr/app
+    command: bash -c "npm install && npm start"

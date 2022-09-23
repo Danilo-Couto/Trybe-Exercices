@@ -1,0 +1,27 @@
+{
+  "name": "diagnotisc-exercises",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --runInBand --detectOpenHandles --forceExit --verbose",
+    "start": "echo start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/betrybe/diagnostic-exercises.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/betrybe/diagnostic-exercises/issues"
+  },
+  "homepage": "https://github.com/betrybe/diagnostic-exercises#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
