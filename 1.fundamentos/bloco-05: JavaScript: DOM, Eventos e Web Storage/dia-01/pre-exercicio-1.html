@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p class ='paragraphClass' id="paragraph">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">SubTítulo</h4>
+      <p class ='paragraphClass' id="second-paragraph">Segundo parágrafo!</p>
+    </header>
+    <script> 
+      document.getElementById('page-title').innerText = 'Magnolia';
+      let paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "purple";
+/*    let subtitle = document.getElementById('subtitle');
+      subtitle.style.backgroundColor = 'red';
+      subtitle.style.color = 'white';
+      subtitle.innerText = 'Shazam' */
+
+      let paragrafo1 = document.getElementsByClassName('paragraphClass')[0]
+      let paragrafo2 = document.getElementsByClassName('paragraphClass')[1]
+      
+      paragrafo2.innerText ='blabalalablaslas!'   
+      paragrafo1.innerText = 'Além do que ja foi escrito, vou acrescentar ISTO!'
+      paragrafo1.style.color = 'green'
+      
+      document.getElementsByTagName('h4')[0].innerText = 'Subtitulo Alterado!';
+      
+      document.getElementsByTagName('h4')[0].style.backgroundColor='yellow';
+      
+    </script>
+  </body>
+</html>
+
+Recupere o subtítulo e altere a cor dele usando a função getElementsByTagName
