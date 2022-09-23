@@ -1,0 +1,22 @@
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  evaluator:
+    runs-on: self-hosted
+    env:
+        PR_AUTHOR_USERNAME: ${{ github.event.pull_request.user.login }}
+    environment: staging
+    steps:
+      - name: Fetch project repository
+        uses: actions/checkout@v2
+
+      - name: Setup NodeJS
+        uses: actions/setup-node@v1.4.4
+        with:
+          node-version: '14'
+
+      - name: Run Jest evaluation
+        run: evaluator/entrypoint.sh

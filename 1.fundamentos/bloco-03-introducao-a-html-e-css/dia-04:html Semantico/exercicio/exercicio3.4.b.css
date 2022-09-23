@@ -1,0 +1,32 @@
+body {
+font-family: 'Courier New', Courier, monospace;
+}
+
+nav ul li{
+    display:inline;
+}
+
+h3 h2 ul{
+margin-top: -300px;
+}
+
+li > p {
+}
+
+table {
+    border: 1px dashed black;
+}
+caption {
+    border: 1px dashed black;
+}
+td {
+    border: 1px dashed black;
+}
+
+img {
+    background-position: 20px top;
+    max-width: 100%;
+    width:300px;
+    margin: 2px 2px 2px 2px;
+    box-shadow: 5px 10px 20px #012542e1; 
+    }
