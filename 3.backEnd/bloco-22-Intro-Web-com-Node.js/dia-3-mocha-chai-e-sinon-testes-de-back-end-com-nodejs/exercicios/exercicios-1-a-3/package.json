@@ -1,0 +1,12 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha funcaoTest.test"
+  },
+  "author": "",
+  "license": "ISC"
+}
