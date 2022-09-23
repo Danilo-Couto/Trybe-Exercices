@@ -201,64 +201,64 @@ Este repositório contém todas as atividades de aprendizagem desenvolvidas por 
 - [x] Projeto - TFC - Trybe Futebol Clube
 ​
 ##### Bloco 29: Intrudução ao MongoDB
-- [ ] 29.1 - Intrudução - NoSQL
-- [ ] 29.1 - MongoDB - Introdução
-- [ ] 29.2 - Filter Operators
-- [ ] 29.3 - Projeto - Data Flights
+- [x] 29.1 - Intrudução - NoSQL
+- [x] 29.1 - MongoDB - Introdução
+- [x] 29.2 - Filter Operators
+- [x] 29.3 - Projeto - Data Flights
 ​
 ##### Bloco 30: MongoDB: Updates Simples e Complexos
-- [ ] 30.1 - Updates Simples
-- [ ] 30.2 - Updates Complexos - Arrays - Parte 1
-- [ ] 30.3 - Updates Complexos - Arrays - Parte 2
-- [ ] 30.4 - Projeto - Commerce
+- [x] 30.1 - Updates Simples
+- [x] 30.2 - Updates Complexos - Arrays - Parte 1
+- [x] 30.3 - Updates Complexos - Arrays - Parte 2
+- [x] 30.4 - Projeto - Commerce
 ​
 ##### Bloco 31: MasterClass - VPS, CI/CD
-- [ ] 31.1 - Dia 1
-- [ ] 31.2 - Dia 2
+- [x] 31.1 - Dia 1
+- [x] 31.2 - Dia 2
 ​
 ##### Bloco 32: Projeto - App de Delivery
-- [ ] 32.1 - Projeto - App de Delivery
+- [x] 32.1 - Projeto - App de Delivery
 ​
 ## Ciência da Computação :hourglass_flowing_sand:
 ​
 ##### Bloco 33: Introdução à Python
-- [ ] 33.1 - Introdução - Ciência da Computação
-- [ ] 33.1 - Aprendendo Python
-- [ ] 33.2 - Entrada e Saída de dados
-- [ ] 33.3 - Testes
-- [ ] 33.4 - Projeto - Job Insights
+- [x] 33.1 - Introdução - Ciência da Computação
+- [x] 33.1 - Aprendendo Python
+- [x] 33.2 - Entrada e Saída de dados
+- [x] 33.3 - Testes
+- [x] 33.4 - Projeto - Job Insights
 ​
 ##### Bloco 34: Programação Orientada a Objetos e Padrões de Projeto
-- [ ] 34.1 - Introdução à programação orientada a objetos
-- [ ] 34.2 - Herança, Composição e Interfaces
-- [ ] 34.3 - Padrões de projeto
-- [ ] 34.4 - Projeto - Relatórios de Estoque
+- [x] 34.1 - Introdução à programação orientada a objetos
+- [x] 34.2 - Herança, Composição e Interfaces
+- [x] 34.3 - Padrões de projeto
+- [x] 34.4 - Projeto - Relatórios de Estoque
 ​
 ##### Bloco 35: Redes e Raspagem de Dados
 ​
-- [ ] 35.1 - Arquitetura de redes
-- [ ] 35.2 - Redes de computadores, ferramentas e segurança
-- [ ] 35.3 - Raspagem de Dados
-- [ ] 35.4 - Projeto - Tech News
+- [x] 35.1 - Arquitetura de redes
+- [x] 35.2 - Redes de computadores, ferramentas e segurança
+- [x] 35.3 - Raspagem de Dados
+- [x] 35.4 - Projeto - Tech News
 ​
 ​
 ##### Bloco 36: Algoritmos
-- [ ] 36.1 - Complexidade de Algoritmos
-- [ ] 36.2 - Recursividade e Estratégias para solução de problemas
-- [ ] 36.3 - Algoritmos de ordenação e busca
-- [ ] 36.4 - Projeto - Algoritmos
+- [x] 36.1 - Complexidade de Algoritmos
+- [x] 36.2 - Recursividade e Estratégias para solução de problemas
+- [x] 36.3 - Algoritmos de ordenação e busca
+- [x] 36.4 - Projeto - Algoritmos
 ​
 ##### Bloco 37: Estrutura de Dados I: Arrays, Hashmaps e Sets
-- [ ] 37.1 - Arquitetura de Computadores
-- [ ] 37.2 - Arrays
-- [ ] 37.3 - Hashmap e Dict
-- [ ] 37.4 - Set
-- [ ] 37.5 - Projeto - Restaurant Orders
+- [x] 37.1 - Arquitetura de Computadores
+- [x] 37.2 - Arrays
+- [x] 37.3 - Hashmap e Dict
+- [x] 37.4 - Set
+- [x] 37.5 - Projeto - Restaurant Orders
 ​
 ##### Bloco 38: Estrutura de Dados II: Listas, Filas e Pilhas
-- [ ] 38.1 - Nó e Listas Encadeadas
-- [ ] 38.2 - Pilhas e Filas
-- [ ] 38.3 - Projeto - TING - Trybe Is Not Google
+- [x] 38.1 - Nó e Listas Encadeadas
+- [x] 38.2 - Pilhas e Filas
+- [x] 38.3 - Projeto - TING - Trybe Is Not Google
 
 <img src= 'https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white' />
 
