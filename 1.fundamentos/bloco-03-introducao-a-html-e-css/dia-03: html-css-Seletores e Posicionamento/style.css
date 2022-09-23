@@ -1,36 +1,30 @@
-h1 {
-    font-family: sans-serif;
-    font-size: 65;
-    background-color: black;
-    color: rgb(162, 162, 221);
-}
-li {
-    color: black;
-    font-weight: bold;
-}
-.fundao {
-    background-color: orchid;
-}
-p {
-    font-weight: 600;
-    font-size: 2em;
-    line-height: ;
-}
-body {
-    background-color: rgb(162, 162, 221) ;
-    font-size: 16;px
-}
-li {
-    line-height: 40px;
+.caixa {
+    color: white;
+    display: inline-block;
+    line-height: 50px;
     text-align: center;
-    text-decoration: underline;
-}
-#lista1 {
-    color: yellow;
-}
-#lista2 {
-    color: red;
-}
-#lista3 {
-    color: brown;
-}
+    vertical-align: top;
+  }
+  
+  .width-and-height {
+    height: 50px;
+    width: 50px;
+  }
+  
+  /* insira na classe abaixo um padding de 20px para aplicá-lo aos itens B, C e D */
+  .padding {
+      padding: 20px;
+  
+  }
+  
+  /* insira na classe abaixo uma margem de 30px para aplicá-la aos itens C e D */
+  .margin {
+      margin: 30px;
+  
+  }
+  
+  /* insira na classe abaixo uma borda com valor '5px solid black' para aplicá-la ao item D */
+  .border {
+      border: 5px solid black;
+    
+  }
