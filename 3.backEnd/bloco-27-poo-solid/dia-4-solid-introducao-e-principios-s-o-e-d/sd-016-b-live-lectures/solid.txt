@@ -1,0 +1,19 @@
+SRP - princípio da responsabilidade única
+
+Uma classe (função, modulo), deve ter apenas uma razão para mudar
+
+
+#########################
+
+OCP - princípio do aberto fechado
+
+Entidade de software (classes, modulos ou funções) deve estar abertas para extensão e 
+fechadas 
+para modificação
+
+#########################
+
+DIP - princípio da inversão de dependência
+
+O sistema ideal é aquele em que as dependências do código se refiram apenas as abstrações, ou seja, 
+tente ao máximo depender de abstração e não de implementações

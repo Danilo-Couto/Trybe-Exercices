@@ -1,0 +1,13 @@
+{
+    "requirements": [
+      {
+        "description": "Manipulando objetos",
+        "bonus": false
+      },
+      {
+        "description": "High Order Functions",
+        "bonus": false
+      }
+    ]
+  }
+  

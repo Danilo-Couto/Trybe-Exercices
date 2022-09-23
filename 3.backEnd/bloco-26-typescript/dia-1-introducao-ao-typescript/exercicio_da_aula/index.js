@@ -1,0 +1,22 @@
+"use strict";
+// ./index.ts
+exports.__esModule = true;
+var Exercise = require("./exercises");
+console.log(Exercise.greeter('Maria'));
+console.log(Exercise.personAge('Maria', 40));
+console.log("A soma do array \u00E9 igual a ".concat(Exercise.sumArray([3, 6, 9])));
+console.log("Tri\u00E2ngulo de base 10cm e altura 25cm: ".concat(Exercise.triangle(10, 25), "cm\u00B2"));
+console.log("Tri\u00E2ngulo de base 5cm e altura 30cm: ".concat(Exercise.triangle(5, 30), "cm\u00B2"));
+console.log("Tri\u00E2ngulo de base 100cm e altura 200cm: ".concat(Exercise.triangle(100, 200), "cm\u00B2"));
+console.log("Quadrado de lado 10cm: ".concat(Exercise.square(10), "cm\u00B2"));
+console.log("Quadrado de lado 5cm: ".concat(Exercise.square(5), "cm\u00B2"));
+console.log("Quadrado de lado 100cm: ".concat(Exercise.square(100), "cm\u00B2"));
+console.log("Ret\u00E2ngulo de base 10cm e altura 25cm: ".concat(Exercise.rectangle(10, 25), "cm\u00B2"));
+console.log("Ret\u00E2ngulo de base 5cm e altura 30cm: ".concat(Exercise.rectangle(5, 30), "cm\u00B2"));
+console.log("Ret\u00E2ngulo de base 100cm e altura 200cm: ".concat(Exercise.rectangle(100, 200), "cm\u00B2"));
+// Calcule a área de um losango que tem D = 32cm e d = 18cm;
+console.log(("A \u00E1rea de um losango de Diagonal 32cm e diagonal de 18 cm \u00E9 de ".concat(Exercise.losangle(32, 18), "cm2")));
+// Calcule a área de um trapézio que tem B = 100cm, b = 70cm e altura = 50cm;
+console.log(("A \u00E1rea de um trap\u00E9zio de Base 100cm, altura 70 cm e base 50 cm \u00E9 de ".concat(Exercise.trapezie(100, 70, 50), "cm2")));
+//Calcule a área de um círculo de raio igual 25cm;
+console.log(("A \u00E1rea de um c\u00EDrculo de raio 25 cm \u00E9 de ".concat(Exercise.circle(25), "cm2")));
